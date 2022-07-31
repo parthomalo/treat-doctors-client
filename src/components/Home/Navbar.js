@@ -4,6 +4,7 @@ const Navbar = () => {
     const makeIter = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/about'>About</Link></li>
+    <li><Link to='/appointment'>Appointment</Link></li>
     </>
     return (
         <div class="navbar bg-base-100">
@@ -17,7 +18,7 @@ const Navbar = () => {
                         {makeIter}
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link to="/">Treat Doctors</Link>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
@@ -25,7 +26,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Get started</a>
+              {/* <Link>Login </Link> */}
             </div>
         </div> 
     );
