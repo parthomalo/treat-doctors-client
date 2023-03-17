@@ -1,17 +1,17 @@
 import React from 'react';
 import chair from '../../../src/assets/images/chair.png'
+import Button from '../Share/Button';
 const Banner = () => {
     return (
-        <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img width='500px' src={chair} alt="Album" /></figure>
-            <div class="card-body">
-                <h2 class="card-title">Your New Smile Starts Here</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolores repudiandae optio libero aperiam impedit aliquam magni maxime delectus. Accusantium dolore et vero ratione qui sint tempora tenetur amet autem.</p>
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+        <div class="hero min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src={chair} class="max-w-sm rounded-lg shadow-2xl" alt='' />
+                <div>
+                    <h1 class="text-5xl font-bold">Your New Smile Starts Here</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <Button></Button>
                 </div>
             </div>
-            
         </div>
     );
 };
